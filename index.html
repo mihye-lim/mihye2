@@ -8,20 +8,17 @@
     <title>임미혜의 자기소개 페이지입니다</title>
         <style>
         /* CSS3 스타일 시트 작성 */
-        h3 {color: purple,text-align : center ;}
+        
         hr {border: 2.5px solid gray;}
-        span {color: green; font-size: 25px;}
-        li:hover { background : yellowgreen;} /* 가상 클래스 셀렉터 */ 
-        strong { text-decoration : overline;} /* 윗줄 */
-        div {
-        background : beige;
-        padding : 30px;
-        border : 5px dotted navy;
-        margin : 30px;
-            }   
-        ul{list-style-type:"🔹";}
-        ul ul{list-style-type:"🤍"; margin-left: 20px; /* 들여쓰기 */}
 
+        span {color: navy; font-size: 25px;}
+
+        li:hover { background : yellowgreen;} /* 가상 클래스 셀렉터 */ 
+
+        strong { text-decoration : overline;} /* 윗줄 */
+        
+        ul{padding : 30px; line-height: 30px ;list-style-type:"🤍";}
+            
         /* 컬러블록 */
         * {
             margin: 0;
@@ -39,7 +36,7 @@
 
         /* 헤더 */
         header {
-            background-color: lightyellow;
+            background-color: paleturquoise;
             height: 15%; /* 헤더 높이 조정 */
             text-align: center;
             display: flex;
@@ -50,8 +47,8 @@
 
         /* 네비게이션 (왼쪽) */
         nav {
-            background-color: lightgray;
-            width: 20%;
+            background-color: lightcyan;
+            width: 15%;
             height: 75%; /* 남은 높이 중 75% 사용 */
             position: absolute;
             top: 15%; /* 헤더 아래 배치 */
@@ -71,21 +68,22 @@
 
         /* 메인 콘텐츠 */
         section {
-            margin-left: 20%; /* 네비게이션 공간 확보 */
+            margin-left: 15%; /* 네비게이션 공간 확보 */
             height: 75%; /* 남은 높이 중 75% 사용 */
             padding: 20px;
-            background-color: lightblue;
+            background-color: white;
             overflow-y: auto;
         }
 
         /* 푸터 */
         footer {
-            background-color: lightpink;
+            background-color: lightgray;
             height: 10%; /* 푸터 높이 조정 */
             text-align: center;
             line-height: 50px;
             position: relative;
             border-top: 2px solid gray;
+            align-items: center;
         }
 
         </style>
@@ -96,12 +94,16 @@
             <h2 title="h2태그로 작성했습니다."><span>안녕하세요🙌</span> 임미혜입니다🦦</h2>
     </header>
     <nav>
-        <a href="javascript:alert('🍀행운이 가득한 하루가 될 예정입니다(❁´◡`❁)💗')">
-            ✨오늘의 운세를 확인해보세요✨<br></a>
+        <a href="javascript:alert('🍀행운이 가득한 하루가 될 예정입니다(❁´◡`❁)💗')"; text>
+            <b>✨오늘의 운세를 확인해보세요✨</b><br></a>
+        <ul>
+            <li><a href="a1.html" target="_blank">자기소개</a></li>
+            <li><a href="a2.html" target="_blank">시간표</a></li>
+        </ul>
     </nav> 
     <section>
             
-            <img src="./img/me.jpg" alt="사진의 주소가 변경되었습니다." width="480" height="160">
+           
         <hr>
             <img src="./img/mh_1.jpeg" alt="사진의 주소가 변경되었습니다😂" width="250" height="300"
                 onmouseover="this.src='./img/wj_2.jpeg'"
@@ -111,22 +113,7 @@
             </script>
         
         <hr>
-        <h3>
-            <div><img src="https://www.hansung.ac.kr/sites/hansung/images/common/NEW_Logo_2.png" ; alt="사진의 주소가 변경되었습니다."></div>
-            <ul> 
-                <li>이름 : 임미혜
-                <li><a href="https://futureplus.hansung.ac.kr/ko/department/consulting"target="_blank">한성대학교 : 비즈니스컨설팅학과</a>
-                <li>주소 : 경기도 북부
-                <li>관심사 : 사진📸
-                <li>하는 일 : 쇼핑몰 MD 
-                <li>~내가 좋아하는 음식~
-                <ul>
-                    <li>딸기 🍓
-                    <li>푸딩 🍮
-                    <li>빵 🥐
-                </ul>
-            </ul>
-        </h3>
+        
         <br>
         <table border="1">
             <caption style="background-color:lightgray"><strong>토요일 시간표</strong></caption>
