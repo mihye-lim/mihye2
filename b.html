@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<style>
+/* 컬러블록 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* 헤더 */
+header {
+    background-color: lightyellow;
+    height: 15%; /* 헤더 높이 조정 */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid gray;
+}
+
+
+
+/* 메인 콘텐츠 */
+section {
+    margin: 2%; 
+    height: 75%; /* 남은 높이 중 75% 사용 */
+    padding: 20px;
+    background-color: lightblue;
+    overflow-y: auto;
+}
+
+/* 푸터 */
+footer {
+    background-color: lightpink;
+    height: 10%; /* 푸터 높이 조정 */
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    border-top: 2px solid gray;
+}
+
+</style>
+<title>로그인폼</title>
+</head>
+<body>
+    <header>
+        <h3>로그인폼</h3>
+    </header>
+
+
+    <section>
+        <form name="fo" method="get">
+            사용자ID : <input type="text" size="15" value=""><br>
+            비밀번호 : <input type="password" size="15" value="">
+            <input type="submit" size="15" value="완료"><br>
+            성별 : <input type="text" list="성별">
+            <datalist id="성별">
+            <option value="여자"></option>
+            <option value="남자"></option>
+            </datalist>
+            </form>
+    </section>
+    <footer>
+        회원가입하면 회원이 됩니다😜
+    </footer>
+</body>
+</html>
