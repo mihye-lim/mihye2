@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--이 부분은 주석문입니다. 출력하지 않습니다.-->
+
+<html>
+<head>
+<meta charset="utf-8">
+
+    <title>임미혜의 자기소개 페이지입니다</title>
+        <style>
+        /* CSS3 스타일 시트 작성 */
+        h3 {color: purple,text-align : center ;}
+        hr {border: 2.5px solid gray;}
+        span {color: green; font-size: 25px;}
+        li:hover { background : yellowgreen;} /* 가상 클래스 셀렉터 */ 
+        strong { text-decoration : overline;} /* 윗줄 */
+        div {
+        background : beige;
+        padding : 30px;
+        border : 5px dotted navy;
+        margin : 30px;
+            }   
+        ul{list-style-type:"🔹";}
+        ul ul{list-style-type:"🤍"; margin-left: 20px; /* 들여쓰기 */}
+
+        /* 컬러블록 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 헤더 */
+        header {
+            background-color: lightyellow;
+            height: 15%; /* 헤더 높이 조정 */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid gray;
+        }
+
+        /* 네비게이션 (왼쪽) */
+        nav {
+            background-color: lavender;
+            width: 20%;
+            height: 75%; /* 남은 높이 중 75% 사용 */
+            position: absolute;
+            top: 15%; /* 헤더 아래 배치 */
+            left: 0;
+            padding: 20px;
+            overflow-y: auto;
+            border-right: 2px solid gray;
+        }
+
+        nav a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        /* 메인 콘텐츠 */
+        section {
+            margin-left: 20%; /* 네비게이션 공간 확보 */
+            height: 75%; /* 남은 높이 중 75% 사용 */
+            padding: 20px;
+            background-color: lightblue;
+            overflow-y: auto;
+        }
+
+        /* 푸터 */
+        footer {
+            background-color: lightpink;
+            height: 10%; /* 푸터 높이 조정 */
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+            border-top: 2px solid gray;
+        }
+
+        </style>
+</head>
+<body>
+    <header>
+        <hr>
+            <h2 title="h2태그로 작성했습니다."><span>안녕하세요🙌</span> 임미혜입니다🦦</h2>
+    </header>
+    <nav>
+        <a href="javascript:alert('🍀행운이 가득한 하루가 될 예정입니다(❁´◡`❁)💗')">
+            ✨오늘의 운세를 확인해보세요✨<br></a>
+    </nav> 
+    <section>
+            
+            <img src="./img/me.jpg" alt="사진의 주소가 변경되었습니다." width="480" height="160">
+        <hr>
+            <img src="./img/mh_1.jpeg" alt="사진의 주소가 변경되었습니다😂" width="250" height="300"
+                onmouseover="this.src='./img/wj_2.jpeg'"
+                onmouseout="this.src='./img/mh_1.jpeg'">
+            <script>
+                document.write("<mark>마우스를 올려보세요! 귀여운 강아지가 나와요🐶</mark><br>");
+            </script>
+        
+        <hr>
+        <h3>
+            <div><img src="https://www.hansung.ac.kr/sites/hansung/images/common/NEW_Logo_2.png" ; alt="사진의 주소가 변경되었습니다."></div>
+            <ul> 
+                <li>이름 : 임미혜
+                <li><a href="https://futureplus.hansung.ac.kr/ko/department/consulting"target="_blank">한성대학교 : 비즈니스컨설팅학과</a>
+                <li>주소 : 경기도 북부
+                <li>취미 : 강아지 산책🐕
+                <li>~내가 좋아하는 음식~
+                <ul>
+                    <li>딸기 🍓
+                    <li>푸딩 🍮
+                    <li>빵 🥐
+                </ul>
+            </ul>
+        </h3>
+        <br>
+        <table border="1">
+            <caption style="background-color:lightgray"><strong>토요일 시간표</strong></caption>
+            <thead>
+                <tr><th>과목</th><th>시간</th></tr>
+            </thead>
+            <tfoot>
+                <tr><th>비즈니스 컨설팅학과</th><th>2304024 임미혜</th></tr>
+            </tfoot>
+            <tbody>
+                <tr><td>데이터사이언스기초</td><td>오전 9시~9시 50분</td></tr>
+                <tr><td>AI를 위한 기초수학</td><td>오전 10시~10시 50분</td></tr>
+                <tr><td>C프로그래밍</td><td>오후 1시~2시 50분</td></tr>
+                <tr><td>웹프로그래밍</td><td>오후 3시~3시 50분</td></tr>
+            </tbody>
+        </table>
+
+        <hr>
+    </section>
+    <footer>
+        <a href="b.html"target="_blank">회원가입</a>
+    </footer>
+</body>
+</html>
