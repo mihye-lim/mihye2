@@ -50,6 +50,10 @@ footer {
     border-top: 2px solid gray;
 }
 
+div {
+    padding: 5px;
+        }
+
 </style>
 <title>로그인폼</title>
 </head>
@@ -61,14 +65,47 @@ footer {
 
     <section>
         <form name="fo" method="get">
-            사용자ID : <input type="text" size="15" value=""><br>
-            비밀번호 : <input type="password" size="15" value="">
-            <input type="submit" size="15" value="완료"><br>
-            성별 : <input type="text" list="성별">
-            <datalist id="성별">
-            <option value="여자"></option>
-            <option value="남자"></option>
-            </datalist>
+
+            <div>사용자ID : <input type="text" size="15" value=""><br></div>
+            <div>비밀번호 : <input type="password" size="15" value="">
+            <input type="submit" size="15" value="완료"><br></div>
+
+            <div>학과 : <input type="text" list="학과">
+            <datalist id="학과">
+                <option value="비즈니스컨설팅학과"></option>
+                <option value="미래인재학부"></option>
+                <option value="호텔외식경영학과"></option>
+                <option value="ICT융합디자인학과"></option>
+                <option value="융합행정학과"></option>
+                <option value="뷰티디자인학과"></option>
+            </datalist></div>
+
+            <div id="성별">
+                성별 :
+                <input type="radio" name="성별" value="여자"> 여자
+                <input type="radio" name="성별" value="남자"> 남자
+            </div>
+
+            <div id="색상">
+                색상 :
+                <input type="color"> 좋아하는 색상을 선택하세요!😊
+            </div>
+
+            
+            <div id="현재 상태">
+                현재 상태를 선택하세요(중복선택 가능합니다!): <br>
+                <input type="checkbox" name="emotional" value="기쁨"> 기쁨
+                <input type="checkbox" name="emotional" value="슬픔"> 슬픔
+                <input type="checkbox" name="emotional" value="졸림"> 졸림
+                <input type="checkbox" name="emotional" value="분노"> 분노
+                <input type="checkbox" name="emotional" value="우울"> 우울
+                <input type="checkbox" name="emotional" value="편안함"> 편안함
+            </div>
+
+            
+
+            
+
             </form>
     </section>
     <footer>
